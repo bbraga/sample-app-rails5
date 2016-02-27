@@ -1,6 +1,9 @@
 addons:
   postgresql: "9.4"
 
+  code_climate:
+    repo_token: c006379620429f25d0bb9ca6b41b65a923650497df1ec0cb69ebdc3290787983
+
 services:
   - postgresql
 
