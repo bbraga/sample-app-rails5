@@ -7,6 +7,7 @@ gem 'pg', '~> 0.18'
 gem 'puma'
 
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
@@ -24,7 +25,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem "codeclimate-test-reporter", group: :test, require: false
+group :test do
+  gem 'rails-controller-testing'
+  gem "codeclimate-test-reporter", require: false
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
